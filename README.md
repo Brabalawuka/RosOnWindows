@@ -1,6 +1,6 @@
-# Install ROS on Windows Tutorial
+# Configure ROS development environment on Windows Tutorial
 
-This tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part on eif you have installed ROS already.
+This step by step tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part on eif you have installed ROS already.
 
 ## Prerequisite:
 1. Reserve space for the installation  
