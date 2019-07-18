@@ -1,4 +1,7 @@
 # Install ROS on Windows Tutorial
+
+This tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part on eif you have installed ROS already.
+
 ## Prerequisite:
 1. Reserve space for the installation  
     Reserve 10 GB free space under clean and enpty `c:\opt` before proceeding.  
@@ -6,8 +9,8 @@
 
 3. Create a new shortcut for Visual Studio CMD (Anywhere on your desktop)  
   
-    <img src="1.png" alt="drawing" width="400" />  
-    <img src="2.png" alt="drawing" width="400" />  
+    <img src="ScreenShot/1.png" alt="drawing" width="400" />  
+    <img src="ScreenShot/2.png" alt="drawing" width="400" />  
 
 4. Copy and Paste the following line as the location: 
 
@@ -18,7 +21,7 @@
 5. You can rename the shortcut as “ROS”, and change the  
   `Property ->Advanced -> Run as administrator`  
 
-    ><img src="3.png" alt="drawing" width="500" />  
+    ><img src="ScreenShot/3.png" alt="drawing" width="500" />  
 6. Install Chocolatey  
 -Open ROS Command (Created just now)  
 -Copy and paste  
@@ -49,7 +52,7 @@
 
     `&& c:\opt\ros\melodic\x64\setup.bat`  
     
-    <img src="4.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/4.png" alt="drawing" width="500" />  
 
     This is necessary as it helps to load cmake profiles.  
       
@@ -66,33 +69,33 @@
 Find `[HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor]`
 and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`   
 
-    <img src="5.png" alt="drawing" width="500" /> 
-    <img src="6.png" alt="drawing" width="500" /> 
+    <img src="ScreenShot/5.png" alt="drawing" width="500" /> 
+    <img src="ScreenShot/6.png" alt="drawing" width="500" /> 
 
 ## Configuration  
 ### Creating Catkin WorkSpace
 
 1. Open ROS command (If you have your `roscore` runnign on you remote maste r you should see something like this)  
 
-    <img src="7.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/7.png" alt="drawing" width="500" />  
 2. `cd` to place you want to create your workspace, we use `C:\` here  
 
-    <img src="8.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/8.png" alt="drawing" width="500" />  
 
 3. Create ur own catkin workpalce `mkdir my_catkin_wp\src` with an `src` folder inside to place packages  
 
-    <img src="9.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/9.png" alt="drawing" width="500" />  
 
 4. `cd` to you workspace and initialilse catkin for configuration  
 
     `catkin_make`  
       
-    <img src="10.png" alt="drawing" width="500" />  
-    <img src="11.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/10.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/11.png" alt="drawing" width="500" />  
 
     You should see these folders, for detail usage of these folders please refer to [ROS.wiki](http://wiki.ros.org/catkin):  
 
-    <img src="12.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/12.png" alt="drawing" width="500" />  
 
 
 
@@ -100,30 +103,30 @@ and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`
 
     `catkin_create_pkg helloworld roscpp rospy std_msgs`  
 
-    <img src="13.png" alt="drawing" width="500" />  
+    <img src="ScreenShot/13.png" alt="drawing" width="500" />  
 
     Now save your setings by calling `devel\setup.bat`  
 
-    <img src="14.png" alt="drawing" width="500" />
+    <img src="ScreenShot/14.png" alt="drawing" width="500" />
       
 6. Now we have come to the end of comfiguration process, enter `devenv` to start your IDE . Then `Choose from your local folder to open up your catkin workspace`  
 
-    <img src="15.png" alt="drawing" width="500" />
+    <img src="ScreenShot/15.png" alt="drawing" width="500" />
 
 
 ### Ros Development With Visual Studio ###
 
 1. As Visual Studio is using different settings for CMake project. We need to configure the CMake file. If you have followed the tutorial correctly, should see this picture while you open the `devenv` Visual studio  
 
-    <img src="16.png" alt="drawing" />  
+    <img src="ScreenShot/16.png" alt="drawing" />  
     
 2. Right click `src -> CMakeLists.txt` and go to Cmake settings  
 
-    <img src="17.png" alt="drawing" width="500"/>  
+    <img src="ScreenShot/17.png" alt="drawing" width="500"/>  
 
     Click button <Kbd>Edit Json</Kbd>
 
-    <img src="18.png" alt="drawing" width="500"/>  
+    <img src="ScreenShot/18.png" alt="drawing" width="500"/>  
 
 3. In the json file, edit the following lines:  
 
@@ -137,19 +140,19 @@ and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`
 
     Refer to following pictures:  
 
-    <img src="19.png" alt="drawing" />  
-    <img src="20.png" alt="drawing"/>  
+    <img src="ScreenShot/19.png" alt="drawing" />  
+    <img src="ScreenShot/20.png" alt="drawing"/>  
 
 4. Now in he file explorer, we can <Kbd>delete</Kbd> the `out` folder which is the default build forlder for visual studio  
 
-    <img src="21.png" alt="drawing" width="500"/>  
+    <img src="ScreenShot/21.png" alt="drawing" width="500"/>  
 
 
 ## Test RosPackage ##
 
 Add a new file in `src -> helloworld -> src` and name it `helloworld.cpp` (or other name you prefer)
 
-<img src="22.png" alt="drawing" width="500"/>  
+<img src="ScreenShot/22.png" alt="drawing" width="500"/>  
 
 You would see that the file is catagorised as `Miscellaneous file`, as we are yet to include it in our cmake project.  For a miscellaneous file, we are not getting intellisense.
 
@@ -159,17 +162,17 @@ Open `src -> helloworld -> src -> CmakeLists.txt` and find the line
 
 ->> Uncomment the line (for those who use personalised cpp file name you need to change the path)  
 
-<img src="23.png" alt="drawing" width="500"/>  
+<img src="ScreenShot/23.png" alt="drawing" width="500"/>  
 
 
 Now we are getting intellisense for our cpp file  
 
-<img src="24.png" alt="drawing" width="500"/>  
+<img src="ScreenShot/24.png" alt="drawing" width="500"/>  
 
 
-<img src="25.png" alt="drawing" width="500"/>  
+<img src="ScreenShot/25.png" alt="drawing" width="500"/>  
 
-<img src="26.png" alt="drawing" width="500"/>  
+<img src="ScreenShot/26.png" alt="drawing" width="500"/>  
 
 
 
