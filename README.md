@@ -57,7 +57,7 @@ This tutorial is for those rookies who are trying to develop ROS on windows yet 
 
     This is necessary as it helps to load cmake profiles.  
       
-4. *(Optional)* Change `ROS_MASTER URI` (You master PC running `roscore`)  
+4. *(Optional)* Change `ROS_MASTER URI` (You master Device running `roscore`)  
     If you dont want to start a new `roscore` but to connect to your master such as a robot, you can do the following instruction:  
       -Create a `.txt` **including** following content: (Use your own Master address)  
         
@@ -189,7 +189,8 @@ Helloworld!
 
 
 
-Reference: https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html
+Reference: https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html  
+https://superuser.com/questions/144347/is-there-windows-equivalent-to-the-bashrc-file-in-linux
 
       
 
