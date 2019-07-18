@@ -9,7 +9,8 @@ This tutorial is for those rookies who are trying to develop ROS on windows yet 
 
 3. Create a new shortcut for Visual Studio CMD (Anywhere on your desktop)  
   
-    <img src="ScreenShot/1.png" alt="drawing" width="400" />    
+    <img src="ScreenShot/1.png" alt="drawing" width="400" />  
+    
     <img src="ScreenShot/2.png" alt="drawing" width="400" />  
 
 4. Copy and Paste the following line as the location: 
