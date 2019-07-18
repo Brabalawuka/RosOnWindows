@@ -1,6 +1,6 @@
 # Configure ROS development environment on Windows Tutorial
 
-This step by step tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part one if you have installed ROS already.
+This step by step tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part one if you have installed ROS already. You can find a demo workspace
 
 ## Prerequisite:
 1. Reserve space for the installation  
@@ -191,7 +191,8 @@ Helloworld!
 
 Reference:  
 https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html  
-https://superuser.com/questions/144347/is-there-windows-equivalent-to-the-bashrc-file-in-linux
+https://superuser.com/questions/144347/is-there-windows-equivalent-to-the-bashrc-file-in-linux  
+http://wiki.ros.org/ROS/Tutorials
 
       
 
