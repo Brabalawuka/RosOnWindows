@@ -1,6 +1,6 @@
 # Configure ROS development environment on Windows Tutorial
 
-This step by step tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part on eif you have installed ROS already.
+This step by step tutorial is for those rookies who are trying to develop ROS on windows yet are suffering from confusing errors. ROS installation setps can be found on [Official Microsoft github page](https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html) I am just doing an integration and tried out some useful step you can follow after installation. You can skip part one if you have installed ROS already.
 
 ## Prerequisite:
 1. Reserve space for the installation  
@@ -10,7 +10,7 @@ This step by step tutorial is for those rookies who are trying to develop ROS on
 3. Create a new shortcut for Visual Studio CMD (Anywhere on your desktop)  
   
     <img src="ScreenShot/1.png" alt="drawing" width="400" />  
-    
+    ----  
     <img src="ScreenShot/2.png" alt="drawing" width="400" />  
 
 4. Copy and Paste the following line as the location: 
@@ -83,7 +83,7 @@ and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`
 
     <img src="ScreenShot/8.png" alt="drawing" width="500" />  
 
-3. Create ur own catkin workpalce `mkdir my_catkin_wp\src` with an `src` folder inside to place packages  
+3. Create ur own catkin workpalce `mkdir my_catkin_wp\src` with an `src` folder inside to place packages I suggest to use C root space, if you are using your own space, note that **all folders involved in the path should not contain special characters like space**  
 
     <img src="ScreenShot/9.png" alt="drawing" width="500" />  
 
@@ -183,13 +183,12 @@ Now we are getting intellisense for our cpp file
 Helloworld!
 
 
+<p align="center">End of tutorial</p>
 
 
 
-
-
-
-Reference: https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html  
+Reference:  
+https://ms-iot.github.io/ROSOnWindows/GettingStarted/Setup.html  
 https://superuser.com/questions/144347/is-there-windows-equivalent-to-the-bashrc-file-in-linux
 
       
